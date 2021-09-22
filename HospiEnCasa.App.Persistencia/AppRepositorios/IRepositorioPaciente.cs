@@ -12,6 +12,4 @@ namespace HospiEnCasa.App.Persistencia
         void DeletePaciente(int idPaciente);
         Paciente GetPaciente(int idPaciente);
     }
-
-
 }
