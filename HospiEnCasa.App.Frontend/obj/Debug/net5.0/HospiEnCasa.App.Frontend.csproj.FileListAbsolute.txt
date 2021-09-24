@@ -71,3 +71,4 @@ C:\Users\Usuario\OneDrive\Documentos\Misión Tic 2022\1-Code\ciclo-3\Hospitaliza
 C:\Users\Usuario\OneDrive\Documentos\Misión Tic 2022\1-Code\ciclo-3\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.Frontend\bin\Debug\net5.0\HospiEnCasa.Persistencia.dll
 C:\Users\Usuario\OneDrive\Documentos\Misión Tic 2022\1-Code\ciclo-3\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.Frontend\bin\Debug\net5.0\HospiEnCasa.Persistencia.pdb
 C:\Users\Usuario\OneDrive\Documentos\Misión Tic 2022\1-Code\ciclo-3\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.Frontend\bin\Debug\net5.0\HospiEnCasa.Dominio.pdb
+C:\Users\Usuario\OneDrive\Documentos\Misión Tic 2022\1-Code\ciclo-3\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Details.cshtml.g.cs
