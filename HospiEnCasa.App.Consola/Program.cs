@@ -14,7 +14,8 @@ namespace HospiEnCasa.App.Consola
             //BuscarPaciente(1);
             //UpdatePaciente(paciente);
             //DeletePaciente(2);
-
+            AddMedico();
+            //AsignarMedico();
         }
         private static void AddPaciente()
         {
@@ -37,13 +38,39 @@ namespace HospiEnCasa.App.Consola
             var paciente = _repoPaciente.GetPaciente(idPaciente);
             Console.WriteLine(paciente.Nombre + " " + paciente.Apellidos);
         }
-        //private static void UpdatePaciente(Paciente paciente)
-        //{
-        //  _repoPaciente.UpdatePaciente(paciente);
-        //}
-        private static void DeletePaciente(int idPaciente)
+
+        private static void MostrarPacientes()
+        {
+            var pacientes = _repoPaciente.GetAllPacientes();
+            foreach (var paciente in pacientes)
+            {
+                Console.WriteLine(paciente.Nombre + " " + paciente.Apellidos);
+            }
+        }
+
+        /*private static void DeletePaciente(int idPaciente)
         {
             _repoPaciente.DeletePaciente(idPaciente);
+        }*/
+        private static void AddMedico()
+        {
+            var medico = new Medico
+            {
+                Nombre = "Francisco",
+                Apellidos = "Sanchez",
+                NumeroTelefono = "3001645",
+                Genero = Genero.Masculino,
+                Especialidad = "Internista",
+                Codigo = "1234abc",
+                RegistroRethus = "abc123"
+            };
+            _repoMedico.AddMedico(medico);
+        }
+
+        private static void AsignarMedico()
+        {
+            var medico = _repoPaciente.AsignarMedico(1, 2);
+            Console.WriteLine(medico.Nombre + " " + medico.Apellidos);
         }
 
     }
